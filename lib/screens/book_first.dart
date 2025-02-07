@@ -7,18 +7,46 @@ class BookFirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Book Store")),
+      appBar: AppBar(title: const Text("Book Store")),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Column(
-          children: [
-            Book(title: "MANDODARI", author: "MOHAN RAJH MADAWALA", price: "\$29.99", imageUrl: "assets/images/Book_01.jpg"),
-            Book(title: "LOVINA", author: "MOHAN RAJH MADAWALA", price: "\$34.99", imageUrl: "assets/images/Book_02.jpg"),
-            Book(title: "CAMELLIA", author: "VIRAJINI THENNAKON", price: "\$39.99", imageUrl: "assets/images/Book_03.jpg"),
-
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Book(
+                title: 'Flutter for Beginners',
+                author: 'John Doe',
+                coverImageUrl: 'assets/images/Book_01.jpg',
+                price: '\$19.99',
+                onBuyPressed: () {
+                  print('Book purchased!');
+                },
+              ),
+              const SizedBox(height: 20),
+              Book(
+                title: 'Dart in Action',
+                author: 'Chris Buckett',
+                coverImageUrl: 'assets/images/Book_02.jpg',
+                price: '\$24.99',
+                onBuyPressed: () {
+                  print('Book purchased!');
+                },
+              ),
+              const SizedBox(height: 20),
+              Book(
+                title: 'Mastering Flutter',
+                author: 'Jane Smith',
+                coverImageUrl: 'assets/images/Book_03.jpg',
+                price: '\$29.99',
+                onBuyPressed: () {
+                  print('Book purchased!');
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
 }
+
