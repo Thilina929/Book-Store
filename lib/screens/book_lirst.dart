@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/book.dart';
+ 
 
 class BookFirstScreen extends StatelessWidget {
   const BookFirstScreen({super.key});
@@ -17,7 +18,7 @@ class BookFirstScreen extends StatelessWidget {
                 title: 'MANDODARI',
                 author: 'MOHAN RAJ MADAWALA',
                 coverImageUrl: 'assets/images/Book_01.jpg',
-                price: '\Rs.1250',
+                price: 'Rs.1250',
                 onBuyPressed: () {
                   print('Book purchased!');
                 },
@@ -27,7 +28,7 @@ class BookFirstScreen extends StatelessWidget {
                 title: 'LOVINA',
                 author: 'MOHAN RAJ MADAWALA',
                 coverImageUrl: 'assets/images/Book_02.jpg',
-                price: '\Rs. 950',
+                price: 'Rs.950',
                 onBuyPressed: () {
                   print('Book purchased!');
                 },
@@ -37,7 +38,7 @@ class BookFirstScreen extends StatelessWidget {
                 title: 'CAMELLIA',
                 author: 'VIRAJINI THENNAKON',
                 coverImageUrl: 'assets/images/Book_03.jpg',
-                price: '\Rs. 1150',
+                price: 'Rs.1150',
                 onBuyPressed: () {
                   print('Book purchased!');
                 },
@@ -49,4 +50,3 @@ class BookFirstScreen extends StatelessWidget {
     );
   }
 }
-
