@@ -14,30 +14,30 @@ class BookFirstScreen extends StatelessWidget {
           child: Column(
             children: [
               Book(
-                title: 'Flutter for Beginners',
-                author: 'John Doe',
+                title: 'MANDODARI',
+                author: 'MOHAN RAJ MADAWALA',
                 coverImageUrl: 'assets/images/Book_01.jpg',
-                price: '\$19.99',
+                price: '\Rs.1250',
                 onBuyPressed: () {
                   print('Book purchased!');
                 },
               ),
               const SizedBox(height: 20),
               Book(
-                title: 'Dart in Action',
-                author: 'Chris Buckett',
+                title: 'LOVINA',
+                author: 'MOHAN RAJ MADAWALA',
                 coverImageUrl: 'assets/images/Book_02.jpg',
-                price: '\$24.99',
+                price: '\Rs. 950',
                 onBuyPressed: () {
                   print('Book purchased!');
                 },
               ),
               const SizedBox(height: 20),
               Book(
-                title: 'Mastering Flutter',
-                author: 'Jane Smith',
+                title: 'CAMELLIA',
+                author: 'VIRAJINI THENNAKON',
                 coverImageUrl: 'assets/images/Book_03.jpg',
-                price: '\$29.99',
+                price: '\Rs. 1150',
                 onBuyPressed: () {
                   print('Book purchased!');
                 },
